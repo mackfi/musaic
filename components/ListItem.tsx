@@ -62,14 +62,14 @@ const ListItem: React.FC<ListItemProps> = ({
                 flex
                 items-center
                 justify-center
-                bg-red-500
+                bg-rose-500
                 p-4
                 drop-shadow-md
                 right-5
                 group-hover:opacity-100
                 hover:scale-110
             ">
-                <FaPlay className="text-black"/>
+                <FaPlay className="text-white"/>
             </div>
         </button>
     );
