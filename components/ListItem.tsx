@@ -38,6 +38,7 @@ const ListItem: React.FC<ListItemProps> = ({
         ">
             <div
             className="
+                h-16
                 relative
                 min-h [64px]
                 min-w-[64px]
