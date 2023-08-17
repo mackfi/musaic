@@ -44,6 +44,7 @@ const Header: React.FC<HeaderProps> = (
     }
 
     return (
+        //Change gradient to from-rose-300
         <div
             className={twMerge(`
                 h-fit
