@@ -12,6 +12,15 @@ import uniqid from "uniqid";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useRouter } from "next/navigation";
 
+// const { Configuration, OpenAIApi} = require("openai");
+// const configuration = new Configuration({
+//   apiKey: process.env.OPENAI_API_KEY,
+// });
+
+// const openai = new OpenAIApi(configuration);
+
+
+
 const UploadModal = () => {
     const [isLoading, setIsLoading] = useState(false);
     const uploadModal = useUploadModal();
@@ -45,6 +54,12 @@ const UploadModal = () => {
 
             const imageFile = values.image?.[0];
             const songFile = values.song?.[0];
+            
+            // const imageResponse = await openai.createImage({
+            //     prompt: "",
+            //     n: 1,
+            //     size: "512x512"
+            // });
 
             if (!imageFile || !songFile || !user) {
                 toast.error('Missing fields');
