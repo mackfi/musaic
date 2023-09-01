@@ -95,6 +95,8 @@ const Modal: React.FC<ModalProps> = ({
                                 rounded-full
                                 focus:outline-none
                             "
+
+                            aria-label="Close"
                         >
                             <IoMdClose/>
                         </button>
@@ -104,7 +106,7 @@ const Modal: React.FC<ModalProps> = ({
                     
             </Dialog.Portal>
         </Dialog.Root>
-    )
+    );
 }
 
 export default Modal;
