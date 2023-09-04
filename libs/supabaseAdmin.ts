@@ -134,11 +134,11 @@ const manageSubscriptionStatusChange = async (
     const subscription = await stripe.subscriptions.retrieve(
         subscriptionId,
         {
-            expand: ["default_payment_method"]
+            expand: ['default_payment_method']
         }
     );
 
-    const subscriptionData: Database["public"]["Tables"]["subscriptions"]["Insert"] = {
+    const subscriptionData: Database['public']['Tables']['subscriptions']['Insert'] = {
         id: subscription.id,
         user_id: uuid,
         metadata: subscription.metadata,
@@ -164,13 +164,13 @@ const manageSubscriptionStatusChange = async (
 
     if (error) throw error;
 
-    console.log(`Inserted/Updated subscription [${subscription.id} for ${uuid}]`);
+    console.log(`Inserted/Updated subscription [${subscription.id}] for [${uuid}]`);
 
     if (createAction && subscription.default_payment_method && uuid) {
         await copyBillingDetailsToCustomer (
             uuid,
             subscription.default_payment_method as Stripe.PaymentMethod
-        )
+        );
     }
 };
 
@@ -179,4 +179,4 @@ export {
     upsertPriceRecord,
     createOrRetrieveCustomer,
     manageSubscriptionStatusChange
-}
+};

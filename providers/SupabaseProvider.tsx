@@ -7,7 +7,7 @@ import { useState } from "react";
 
 interface SupabaseProviderProps {
     children: React.ReactNode;
-}
+};
 
 const SupabaseProvider: React.FC<SupabaseProviderProps> = ({
     children
