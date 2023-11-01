@@ -2,9 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Overview
 
-This is a music web application modeled after YouTube Music, which is my music app of choice.
+This is a music web application loosely modeled after YouTube Music, which is my music app of choice for anyone who was curious.
 
-Open https://ytmusic-clone-mackfi.vercel.app/ to view the current deployment.
+Open https://musaic.online to view the current deployment.
 
 ## Notes
 
