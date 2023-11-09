@@ -13,8 +13,8 @@ import getActiveProductsWithPrices from '@/actions/getActiveProductsWithPrices'
 const font = Figtree({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'YouTube Music',
-  description: 'Listen to music!',
+  title: 'Musaic',
+  description: 'Mosaic of Music.',
 }
 
 export const revalidate = 0;
