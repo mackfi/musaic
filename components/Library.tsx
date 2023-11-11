@@ -30,7 +30,7 @@ const Library: React.FC<LibraryProps> = ({
             return authModal.onOpen();
         }
 
-        // TODO: Check for subscription? - Might make library free to use
+        // TODO: Check for subscription? - Might make library free to use 
         // if (!subscription) {
         //     return subscribeModal.onOpen();
         // }
