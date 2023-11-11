@@ -31,7 +31,7 @@ const Library: React.FC<LibraryProps> = ({
         }
 
         // TODO: Check for subscription? - Might make library free to use 
-        // if (!subscription) {
+        // if (!subscription) { 
         //     return subscribeModal.onOpen();
         // }
 
