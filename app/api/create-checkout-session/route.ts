@@ -39,8 +39,8 @@ export async function POST(
         trial_from_plan: true,
         metadata
       },
-      success_url: `musaic.online/account`,
-      cancel_url: `musaic.online/`
+      success_url: `https://musaic.online/account`,
+      cancel_url: `https://musaic.online/`
     });
 
     return NextResponse.json({ sessionId: session.id });
